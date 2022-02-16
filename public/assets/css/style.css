@@ -1,0 +1,179 @@
+/*Import Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+
+:root{
+    --sm-font: 'Montserrat', sans-serif;
+    --lg-font: 'Raleway', sans-serif;
+    --colour1:#E76F51;
+    --colour2:#264653;
+    --colour3:#2A9D8F;
+    --colour4:#E9C46A;
+    --colour5:#F4A261;
+}
+/* 
+nav img{
+    width: 70px;
+} */
+body{
+    font-family: var(--sm-font);
+}
+
+/*button*/
+.bg-primary{
+    background-color: var(--colour1)!important;
+}
+.btn:not(.nav-btns button){
+    background-color: #FFF;
+    color: var(--colour2);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid var(--colour2);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--colour3);
+    color: #FFF;
+    border-color: var(--colour3);
+}
+
+/*Text colour*/
+.text-primary{
+   color: var(--colour2); 
+}
+
+/*navbar*/
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--colour5)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0,0,0,0.05);
+}
+
+/*Header*/
+#header{
+    background: url(../images/mike-von-bWUOx0SaSAk-unsplash.jpg) top/cover no-repeat;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-inner .btn{
+    border-color: var(--colour2)!important;
+}
+.carousel-inner .btn:hover{
+    border-color: var(--colour3)!important;
+}
+
+/*Title*/
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--colour2);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Collection*/
+.active-filter-btn{
+    background-color: var(--colour3)!important;
+    color: #FFF;
+    border-color: var(--colour3)!important;
+}
+.filter-button-group .btn:hover{
+    color: var(--colour3)!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+#collection p{
+    color: var(--colour2)!important;
+}
+#collection p:hover{
+    color: var(--colour3)!important;
+    font-size: 18px;
+}
+.collection-img img{
+    transition: all 0.3s ease;
+}
+.collection-img:hover img{
+    transform: scale(1.05);
+}
+
+/*Special*/
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    transform: scale(1.2);
+}
+
+/*Blogs & Offers*/
+#offers{
+    background: url(../images/raphael-lovaski-rg1IBesrWdw-unsplash.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+#offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent !important;
+}
+
+/*About*/
+#about{
+    background-color: rgba(0,0,0,0.05);
+}
+
+/*Footer*/
+footer{
+   background-color: var(--colour2)!important; 
+}
+footer.brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--colour3)!important;
+}
+
+/*media queries*/
+@media (min-width: 992px) {
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+
+
